@@ -150,7 +150,7 @@
     DOM.typewriterCursor = document.getElementById("typewriter-cursor");
     DOM.typewriterSkipBtn = document.getElementById("typewriter-skip-btn");
     DOM.ch2ContinueBtn = document.getElementById("ch2-continue-btn");
-
+DOM.ch3ContinueBtn = document.getElementById("ch3-continue-btn");
     // Chapter 8 & Unlocks
     DOM.chapter8 = document.getElementById("chapter-8");
     DOM.progressChecklist = document.getElementById("progress-checklist");
@@ -262,7 +262,9 @@
     if (DOM.ch2ContinueBtn) {
       DOM.ch2ContinueBtn.addEventListener("click", () => goToChapter(3));
     }
-
+if (DOM.ch3ContinueBtn) {
+  DOM.ch3ContinueBtn.addEventListener("click", () => goToChapter(4));
+}
     // Nav Drawer Toggle
     if (DOM.chapterNavToggle) {
       DOM.chapterNavToggle.addEventListener("click", () => toggleNavDrawer());
