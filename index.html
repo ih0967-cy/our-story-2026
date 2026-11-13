@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0A0C">
+  <meta name="description" content="OUR STORY — THE ANNIVERSARY EXPERIENCE 2026. Created by Saajim for Mysha, celebrating three years of best friendship on 14 November 2026.">
+  <meta name="author" content="Saajim">
+  <title>OUR STORY — The Anniversary Experience 2026 | Saajim &amp; Mysha</title>
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans & Noto Serif Bengali -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif+Bengali:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       GLOBAL APPLICATION SHELL
+       ===================================================================== -->
+  <div id="app-shell" class="app-shell">
+
+    <!-- ===================================================================
+         PRELOADER / INITIAL CINEMATIC LOADING SCREEN
+         =================================================================== -->
+    <div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading Our Story Anniversary Experience">
+      <div class="preloader-inner">
+        <span class="preloader-monogram" aria-hidden="true">S &amp; M</span>
+        <p class="preloader-subtitle">14 November 2023 — 14 November 2026</p>
+        <div class="preloader-line" aria-hidden="true">
+          <span class="preloader-line-fill"></span>
+        </div>
+        <p class="preloader-status">Preparing three years of memories...</p>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TOP PROGRESS INDICATOR
+         =================================================================== -->
+    <div id="top-progress-bar" class="top-progress-bar" role="progressbar" aria-label="Chapter progression" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1">
+      <div id="top-progress-fill" class="top-progress-fill"></div>
+    </div>
+
+    <!-- ===================================================================
+         GLOBAL HEADER & NAVIGATION CONTROLS
+         =================================================================== -->
+    <header id="global-header" class="global-header is-locked" aria-hidden="true">
+      <div class="header-brand">
+        <span class="brand-kicker">OUR STORY</span>
+        <span id="chapter-indicator" class="chapter-indicator" aria-live="polite">Chapter I / VIII</span>
+      </div>
+
+      <div class="header-actions">
+        <!-- Background Music Toggle Button -->
+        <button id="music-toggle-btn" class="icon-control-btn" type="button" aria-pressed="false" aria-label="Toggle background music">
+          <span class="music-bars" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+          <span id="music-status-label" class="control-label">Music Off</span>
+        </button>
+
+        <!-- Chapter Navigation Drawer Toggle -->
+        <button id="chapter-nav-toggle" class="icon-control-btn" type="button" aria-expanded="false" aria-controls="chapter-nav-drawer" aria-label="Open chapter navigation menu">
+          <span class="nav-icon-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="control-label">Chapters</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================================================================
+         SLIDE-OUT CHAPTER NAVIGATION DRAWER
+         =================================================================== -->
+    <aside id="chapter-nav-drawer" class="chapter-nav-drawer" aria-label="Chapter Navigation" aria-hidden="true">
+      <div class="nav-drawer-backdrop" data-close-drawer="true" tabindex="-1"></div>
+      <div class="nav-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="nav-drawer-heading">
+        <div class="nav-drawer-header">
+          <div>
+            <p class="drawer-eyebrow">The Anniversary Anthology</p>
+            <h2 id="nav-drawer-heading" class="drawer-title">Eight Chapters of Us</h2>
+          </div>
+          <button class="drawer-close-btn" type="button" data-close-drawer="true" aria-label="Close chapter navigation menu">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <nav class="nav-drawer-body" aria-label="Chapters list">
+          <ul id="chapter-nav-list" class="chapter-nav-list">
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-active is-visited" data-target-chapter="1" aria-current="step">
+                <span class="nav-roman">I</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">The Invitation</span>
+                  <span class="nav-chapter-meta">The sealed threshold</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="2">
+                <span class="nav-roman">II</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">The Beginning</span>
+                  <span class="nav-chapter-meta">An introductory letter</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="3">
+                <span class="nav-roman">III</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">Three Years of Us</span>
+                  <span class="nav-chapter-meta">Chronicle 2023 – 2026</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="4">
+                <span class="nav-roman">IV</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">Our Little Universe</span>
+                  <span class="nav-chapter-meta">Nine captured moments</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="5">
+                <span class="nav-roman">V</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">Letters I Never Sent</span>
+                  <span class="nav-chapter-meta">Three quiet confessions &amp; voice</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="6">
+                <span class="nav-roman">VI</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">Two Places, One Story</span>
+                  <span class="nav-chapter-meta">Cyprus to Bangladesh</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="7">
+                <span class="nav-roman">VII</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">The Unwritten Truth</span>
+                  <span class="nav-chapter-meta">Your private sanctuary</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="chapter-nav-item">
+              <button type="button" class="chapter-nav-btn is-locked" data-target-chapter="8">
+                <span class="nav-roman">VIII</span>
+                <span class="nav-details">
+                  <span class="nav-chapter-name">Forever Starts Here</span>
+                  <span class="nav-chapter-meta">The horizon ahead</span>
+                </span>
+                <span class="nav-status-dot" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-drawer-footer">
+          <p class="drawer-dedication">Created by Saajim for Mysha &bull; 14.11.2026</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         MAIN STORY STAGE (8 CHAPTERS)
+         =================================================================== -->
+    <main id="story-stage" class="story-stage">
+
+      <!-- =================================================================
+           CHAPTER 1: THE INVITATION (Cinematic Envelope & Password Entry)
+           ================================================================= -->
+      <section id="chapter-1" class="chapter-section is-active" data-chapter="1" aria-labelledby="ch1-title">
+        <div class="chapter-ambient-glow" aria-hidden="true"></div>
+        <div class="chapter-container chapter-center">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter I &bull; The Threshold</p>
+            <h1 id="ch1-title" class="chapter-main-title">Our Story</h1>
+            <p class="chapter-subtitle">The Third Best-Friendship Anniversary Experience &bull; 14 November 2026</p>
+          </header>
+
+          <!-- Interactive 3D Envelope Wrapper -->
+          <div id="envelope-stage" class="envelope-stage">
+            <div class="envelope-wrapper">
+              <div class="envelope-back" aria-hidden="true"></div>
+
+              <!-- Inner Letter Card Inside Envelope -->
+              <div class="envelope-letter-preview paper-texture">
+                <p class="envelope-recipient">For Mysha</p>
+                <p class="envelope-inscription">
+                  “Some people arrive quietly and become the entire architecture of your days.”
+                </p>
+                <p class="envelope-sender">— Saajim</p>
+              </div>
+
+              <div class="envelope-front" aria-hidden="true"></div>
+              <div class="envelope-flap" aria-hidden="true"></div>
+
+              <!-- Interactive Wax Seal -->
+              <button id="envelope-seal" class="envelope-seal" type="button" aria-label="Wax seal bearing initials S and M">
+                <span class="seal-ring">
+                  <span class="seal-monogram">S&bull;M</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Password Protection Form -->
+          <div class="invitation-lock-box">
+            <form id="password-form" class="password-form" novalidate>
+              <label for="password-input" class="password-label">
+                Enter the 4-digit memory code to break the seal
+              </label>
+
+              <div class="password-input-group">
+                <input
+                  id="password-input"
+                  class="password-input"
+                  type="password"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  maxlength="8"
+                  placeholder="••••"
+                  autocomplete="off"
+                  required
+                  aria-describedby="password-feedback"
+                >
+                <button id="password-submit-btn" class="btn-gold" type="submit">
+                  <span>Unlock Our Story</span>
+                </button>
+              </div>
+
+              <div class="password-meta-row">
+                <button id="password-hint-btn" class="text-link-btn" type="button" aria-expanded="false">
+                  Need a reminder?
+                </button>
+              </div>
+
+              <p id="password-feedback" class="password-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 2: THE BEGINNING (Typewriter Introductory Letter)
+           ================================================================= -->
+      <section id="chapter-2" class="chapter-section" data-chapter="2" aria-labelledby="ch2-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter II &bull; The Beginning</p>
+            <h2 id="ch2-title" class="chapter-title">Where the Ink First Met the Page</h2>
+            <p class="chapter-subtitle">14 November 2023 — The quiet origin of three unforgettable years</p>
+          </header>
+
+          <!-- Vintage Parchment Letter Container -->
+          <article id="letter-paper-ch2" class="letter-paper paper-texture" aria-label="Introductory anniversary letter from Saajim to Mysha">
+            <div class="letter-paper-header">
+              <span class="letter-dateline">14 November 2026 &bull; Three Years On</span>
+              <span class="letter-stamp" aria-hidden="true">III YEARS</span>
+            </div>
+
+            <div class="letter-paper-body">
+              <div id="typewriter-output" class="typewriter-output" aria-live="polite">
+                <p class="letter-salutation">Dearest Mysha,</p>
+                <p>
+                  Three years ago, on the fourteenth of November, neither of us knew that an ordinary conversation would quietly turn into the safest harbor either of us had ever known.
+                </p>
+                <p>
+                  Through changing seasons, shifting time zones, unspoken worries, and bursts of laughter that only we understand, you have remained my constant—my truest confidante and my best friend in every sense of the word.
+                </p>
+                <p>
+                  I built this small universe for you so that whenever the world feels too loud or too distant, you have a place to return to—a monument to every memory we have made since 2023, and every chapter still waiting for us.
+                </p>
+                <p class="letter-signoff">Always in your corner,<br><strong>Saajim</strong></p>
+              </div>
+              <span id="typewriter-cursor" class="typewriter-cursor" aria-hidden="true">|</span>
+            </div>
+
+            <div class="letter-paper-footer">
+              <button id="typewriter-skip-btn" class="btn-outline-subtle" type="button">
+                Reveal Full Letter Instantly
+              </button>
+            </div>
+          </article>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch2-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="3">
+              <span>Continue to Chapter III: Three Years of Us</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 3: THREE YEARS OF US (Editable Timeline 2023–2026)
+           ================================================================= -->
+      <section id="chapter-3" class="chapter-section" data-chapter="3" aria-labelledby="ch3-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter III &bull; The Chronicle</p>
+            <h2 id="ch3-title" class="chapter-title">Three Years of Us</h2>
+            <p class="chapter-subtitle">Every milestone from 14 November 2023 to 14 November 2026</p>
+          </header>
+
+          <!-- Year Filter Controls -->
+          <div id="timeline-filter-bar" class="timeline-filter-bar" role="toolbar" aria-label="Filter timeline milestones by year">
+            <button type="button" class="timeline-filter-btn is-active" data-year="all" aria-pressed="true">All Years</button>
+            <button type="button" class="timeline-filter-btn" data-year="2023" aria-pressed="false">2023</button>
+            <button type="button" class="timeline-filter-btn" data-year="2024" aria-pressed="false">2024</button>
+            <button type="button" class="timeline-filter-btn" data-year="2025" aria-pressed="false">2025</button>
+            <button type="button" class="timeline-filter-btn" data-year="2026" aria-pressed="false">2026</button>
+          </div>
+
+          <!-- Vertical Timeline Spine & Cards (Hydrated and filterable via CONFIG.timeline) -->
+          <div id="timeline-track" class="timeline-track" aria-live="polite">
+
+            <article class="timeline-card" data-year="2023">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2023</span>
+                  <time class="timeline-date" datetime="2023-11-14">14 November 2023</time>
+                </div>
+                <h3 class="timeline-card-title">The Day Our Story Began</h3>
+                <p class="timeline-card-desc">
+                  The spark of a best friendship that needed no pretense. What started as simple words quickly became the anchor of every single day.
+                </p>
+                <span class="timeline-location-tag">Origin &bull; Day One</span>
+              </div>
+            </article>
+
+            <article class="timeline-card" data-year="2024">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2024</span>
+                  <time class="timeline-date" datetime="2024-05-20">Mid 2024</time>
+                </div>
+                <h3 class="timeline-card-title">Endless Nights &amp; Unspoken Understanding</h3>
+                <p class="timeline-card-desc">
+                  Learning the cadence of each other’s silences, celebrating small victories, and standing firm whenever life tested our patience.
+                </p>
+                <span class="timeline-location-tag">Shared Sanctuary</span>
+              </div>
+            </article>
+
+            <article class="timeline-card" data-year="2024">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2024</span>
+                  <time class="timeline-date" datetime="2024-11-14">14 November 2024</time>
+                </div>
+                <h3 class="timeline-card-title">One Year of Unwavering Friendship</h3>
+                <p class="timeline-card-desc">
+                  Three hundred and sixty-five days later, the bond had already outgrown ordinary definitions of friendship.
+                </p>
+                <span class="timeline-location-tag">First Anniversary</span>
+              </div>
+            </article>
+
+            <article class="timeline-card" data-year="2025">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2025</span>
+                  <time class="timeline-date" datetime="2025-07-01">2025</time>
+                </div>
+                <h3 class="timeline-card-title">Across Seas &amp; Time Zones</h3>
+                <p class="timeline-card-desc">
+                  Between Cyprus and Bangladesh, miles turned into mere numbers on a map. Distance proved powerless against daily loyalty.
+                </p>
+                <span class="timeline-location-tag">Cyprus &harr; Bangladesh</span>
+              </div>
+            </article>
+
+            <article class="timeline-card" data-year="2025">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2025</span>
+                  <time class="timeline-date" datetime="2025-11-14">14 November 2025</time>
+                </div>
+                <h3 class="timeline-card-title">Two Years of Choosing Each Other’s Peace</h3>
+                <p class="timeline-card-desc">
+                  Two full orbits around the sun, Marked by deeper trust, honest conversations, and a friendship that felt like home.
+                </p>
+                <span class="timeline-location-tag">Second Anniversary</span>
+              </div>
+            </article>
+
+            <article class="timeline-card" data-year="2026">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-card-inner">
+                <div class="timeline-meta">
+                  <span class="timeline-year-badge">2026</span>
+                  <time class="timeline-date" datetime="2026-11-14">14 November 2026</time>
+                </div>
+                <h3 class="timeline-card-title">Three Years of Us — The Anniversary Experience</h3>
+                <p class="timeline-card-desc">
+                  Over a thousand days of grace, laughter, resilience, and devotion. Still standing side by side, with the best chapters yet to be written.
+                </p>
+                <span class="timeline-location-tag">Third Anniversary &bull; 2026</span>
+              </div>
+            </article>
+
+          </div>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch3-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="4">
+              <span>Continue to Chapter IV: Our Little Universe</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 4: OUR LITTLE UNIVERSE (Nine Photos, Swipe, Lightbox)
+           ================================================================= -->
+      <section id="chapter-4" class="chapter-section" data-chapter="4" aria-labelledby="ch4-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter IV &bull; Visual Archive</p>
+            <h2 id="ch4-title" class="chapter-title">Our Little Universe</h2>
+            <p class="chapter-subtitle">Nine frames holding a thousand unspoken words &bull; Swipe or tap to view fullscreen</p>
+          </header>
+
+          <!-- Gallery Top Utility Bar -->
+          <div class="gallery-toolbar">
+            <span id="gallery-counter" class="gallery-counter" aria-live="polite">1 / 9</span>
+            <button id="gallery-autoplay-btn" class="btn-outline-subtle" type="button" aria-pressed="false">
+              <span>Start Slideshow</span>
+            </button>
+          </div>
+
+          <!-- Touch-Enabled Gallery Viewport -->
+          <div id="gallery-viewport" class="gallery-viewport" role="region" aria-roledescription="carousel" aria-label="Nine anniversary photographs">
+            <div id="gallery-track" class="gallery-track">
+
+              <!-- Photo 1 -->
+              <figure class="gallery-slide is-active" data-slide-index="0">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 1 in fullscreen">
+                  <img src="assets/1.jpg" alt="Memory 1: The quiet beginning of our story" class="gallery-img" loading="eager">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">I</span>
+                    <p class="fallback-title">Frame One &bull; 2023</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 01 / 09</span>
+                  <p class="caption-text">Where the laughter first began to feel like home.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 2 -->
+              <figure class="gallery-slide" data-slide-index="1">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 2 in fullscreen">
+                  <img src="assets/2.jpg" alt="Memory 2: Golden light and quiet conversations" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">II</span>
+                    <p class="fallback-title">Frame Two &bull; Golden Hour</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 02 / 09</span>
+                  <p class="caption-text">Some moments don’t ask for noise—only presence.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 3 -->
+              <figure class="gallery-slide" data-slide-index="2">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 3 in fullscreen">
+                  <img src="assets/3.jpg" alt="Memory 3: Unscripted smiles captured in time" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">III</span>
+                    <p class="fallback-title">Frame Three &bull; Unscripted Joy</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 03 / 09</span>
+                  <p class="caption-text">The kind of smile that makes the heaviest week feel effortless.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 4 -->
+              <figure class="gallery-slide" data-slide-index="3">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 4 in fullscreen">
+                  <img src="assets/4.jpg" alt="Memory 4: Shared stories across seasons" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">IV</span>
+                    <p class="fallback-title">Frame Four &bull; Changing Seasons</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 04 / 09</span>
+                  <p class="caption-text">Through every shifting season, the anchor remained the same.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 5 -->
+              <figure class="gallery-slide" data-slide-index="4">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 5 in fullscreen">
+                  <img src="assets/5.jpg" alt="Memory 5: At the heart of our little universe" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">V</span>
+                    <p class="fallback-title">Frame Five &bull; Centerpiece</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 05 / 09</span>
+                  <p class="caption-text">In the middle of chaos, a quiet constellation of two.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 6 -->
+              <figure class="gallery-slide" data-slide-index="5">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 6 in fullscreen">
+                  <img src="assets/6.jpg" alt="Memory 6: Miles apart yet side by side in spirit" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">VI</span>
+                    <p class="fallback-title">Frame Six &bull; Parallel Skies</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 06 / 09</span>
+                  <p class="caption-text">Looking up at the same sky from two different corners of the world.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 7 -->
+              <figure class="gallery-slide" data-slide-index="6">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 7 in fullscreen">
+                  <img src="assets/7.jpg" alt="Memory 7: Grace and resilience" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">VII</span>
+                    <p class="fallback-title">Frame Seven &bull; Quiet Strength</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 07 / 09</span>
+                  <p class="caption-text">A reminder of how far we have come and everything we have weathered.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 8 -->
+              <figure class="gallery-slide" data-slide-index="7">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 8 in fullscreen">
+                  <img src="assets/8.jpg" alt="Memory 8: Celebrations big and small" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">VIII</span>
+                    <p class="fallback-title">Frame Eight &bull; Bright Days</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 08 / 09</span>
+                  <p class="caption-text">Every ordinary day turned into an occasion simply by sharing it.</p>
+                </figcaption>
+              </figure>
+
+              <!-- Photo 9 -->
+              <figure class="gallery-slide" data-slide-index="8">
+                <div class="gallery-frame" role="button" tabindex="0" aria-label="View photograph 9 in fullscreen">
+                  <img src="assets/9.jpg" alt="Memory 9: Three years and counting" class="gallery-img" loading="lazy">
+                  <div class="gallery-fallback" aria-hidden="true">
+                    <span class="fallback-num">IX</span>
+                    <p class="fallback-title">Frame Nine &bull; 14 November 2026</p>
+                  </div>
+                </div>
+                <figcaption class="gallery-caption-box">
+                  <span class="caption-index">Photograph 09 / 09</span>
+                  <p class="caption-text">Three years behind us, and a lifetime of chapters still ahead.</p>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+          <!-- Gallery Navigation Controls & Pagination Dots -->
+          <div class="gallery-controls-row">
+            <button id="gallery-prev-btn" class="gallery-arrow-btn" type="button" aria-label="Previous photograph">
+              <span aria-hidden="true">&larr;</span>
+            </button>
+
+            <div id="gallery-dots" class="gallery-dots" role="tablist" aria-label="Select a photograph">
+              <button type="button" class="gallery-dot is-active" data-slide-to="0" role="tab" aria-selected="true" aria-label="Photograph 1"></button>
+              <button type="button" class="gallery-dot" data-slide-to="1" role="tab" aria-selected="false" aria-label="Photograph 2"></button>
+              <button type="button" class="gallery-dot" data-slide-to="2" role="tab" aria-selected="false" aria-label="Photograph 3"></button>
+              <button type="button" class="gallery-dot" data-slide-to="3" role="tab" aria-selected="false" aria-label="Photograph 4"></button>
+              <button type="button" class="gallery-dot" data-slide-to="4" role="tab" aria-selected="false" aria-label="Photograph 5"></button>
+              <button type="button" class="gallery-dot" data-slide-to="5" role="tab" aria-selected="false" aria-label="Photograph 6"></button>
+              <button type="button" class="gallery-dot" data-slide-to="6" role="tab" aria-selected="false" aria-label="Photograph 7"></button>
+              <button type="button" class="gallery-dot" data-slide-to="7" role="tab" aria-selected="false" aria-label="Photograph 8"></button>
+              <button type="button" class="gallery-dot" data-slide-to="8" role="tab" aria-selected="false" aria-label="Photograph 9"></button>
+            </div>
+
+            <button id="gallery-next-btn" class="gallery-arrow-btn" type="button" aria-label="Next photograph">
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch4-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="5">
+              <span>Continue to Chapter V: Letters I Never Sent</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 5: LETTERS I NEVER SENT (3 Letters + Voice Message)
+           ================================================================= -->
+      <section id="chapter-5" class="chapter-section" data-chapter="5" aria-labelledby="ch5-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter V &bull; Unspoken Words</p>
+            <h2 id="ch5-title" class="chapter-title">Letters I Never Sent</h2>
+            <p class="chapter-subtitle">Three quiet drafts kept safe until our third anniversary, alongside a voice note for you</p>
+          </header>
+
+          <!-- Three Interactive Unsent Letter Cards -->
+          <div id="unsent-letters-grid" class="unsent-letters-grid">
+
+            <article class="unsent-letter-card paper-texture" data-letter-id="1">
+              <div class="letter-card-top">
+                <span class="letter-card-num">Letter I</span>
+                <span class="letter-card-date">Written on a Quiet Midnight</span>
+              </div>
+              <h3 class="letter-card-title">For the Days You Doubted Your Own Light</h3>
+              <p class="letter-card-excerpt">
+                “I never said this out loud at the time, because you were busy being strong for everyone else...”
+              </p>
+              <button type="button" class="btn-outline-gold open-letter-btn" data-letter-id="1" aria-label="Read Letter 1: For the Days You Doubted Your Own Light">
+                <span>Break Seal &amp; Read</span>
+              </button>
+            </article>
+
+            <article class="unsent-letter-card paper-texture" data-letter-id="2">
+              <div class="letter-card-top">
+                <span class="letter-card-num">Letter II</span>
+                <span class="letter-card-date">Written Across the Miles</span>
+              </div>
+              <h3 class="letter-card-title">When Distance Felt Heavy</h3>
+              <p class="letter-card-excerpt">
+                “There were evenings in Cyprus when a single message from you in Bangladesh changed the entire weight of the room...”
+              </p>
+              <button type="button" class="btn-outline-gold open-letter-btn" data-letter-id="2" aria-label="Read Letter 2: When Distance Felt Heavy">
+                <span>Break Seal &amp; Read</span>
+              </button>
+            </article>
+
+            <article class="unsent-letter-card paper-texture" data-letter-id="3">
+              <div class="letter-card-top">
+                <span class="letter-card-num">Letter III</span>
+                <span class="letter-card-date">Written for 14 November 2026</span>
+              </div>
+              <h3 class="letter-card-title">What Three Years of You Taught Me</h3>
+              <p class="letter-card-excerpt">
+                “If someone had asked me in 2023 what loyalty looked like, I would have given them a textbook answer. Now I know it has a name...”
+              </p>
+              <button type="button" class="btn-outline-gold open-letter-btn" data-letter-id="3" aria-label="Read Letter 3: What Three Years of You Taught Me">
+                <span>Break Seal &amp; Read</span>
+              </button>
+            </article>
+
+          </div>
+
+          <!-- Optional Voice Message Player Card -->
+          <div id="voice-message-card" class="voice-message-card">
+            <div class="voice-card-header">
+              <span class="voice-badge">Personal Recording</span>
+              <h3 class="voice-card-title">A Voice Note From Saajim</h3>
+              <p class="voice-card-subtitle">Background music will gently lower while you listen</p>
+            </div>
+
+            <div class="voice-player-controls">
+              <button id="voice-play-btn" class="voice-play-btn" type="button" aria-pressed="false" aria-label="Play voice message">
+                <span class="voice-play-icon" aria-hidden="true">&#9654;</span>
+              </button>
+
+              <div class="voice-progress-wrap">
+                <label for="voice-seek-bar" class="sr-only">Seek voice message position</label>
+                <input
+                  id="voice-seek-bar"
+                  class="voice-seek-bar"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  step="0.1"
+                >
+                <div class="voice-timestamps">
+                  <span id="voice-time-current">0:00</span>
+                  <span id="voice-time-total">--:--</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graceful Fallback Notice if assets/voice-message.mp3 is absent -->
+            <div id="voice-error-fallback" class="voice-error-fallback" hidden>
+              <p>
+                The voice recording (<strong>assets/voice-message.mp3</strong>) is resting quietly offline right now, but every word written above carries the exact cadence of my voice.
+              </p>
+            </div>
+          </div>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch5-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="6">
+              <span>Continue to Chapter VI: Two Places, One Story</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 6: TWO PLACES, ONE STORY (Cyprus–Bangladesh & Elapsed Timer)
+           ================================================================= -->
+      <section id="chapter-6" class="chapter-section" data-chapter="6" aria-labelledby="ch6-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter VI &bull; Meridian &amp; Memory</p>
+            <h2 id="ch6-title" class="chapter-title">Two Places, One Story</h2>
+            <p class="chapter-subtitle">Bridging Cyprus and Bangladesh across every second since 14 November 2023</p>
+          </header>
+
+          <!-- Cyprus <-> Bangladesh Visual Bridge -->
+          <div id="distance-visual" class="distance-visual" aria-label="Visual connection between Cyprus and Bangladesh">
+
+            <!-- Cyprus Node -->
+            <div id="node-cyprus" class="location-node">
+              <span class="location-tag">Mediterranean Horizon</span>
+              <h3 class="location-name">Cyprus</h3>
+              <p class="location-person">Saajim</p>
+              <div class="location-clock-wrap">
+                <span class="clock-label">Local Time</span>
+                <time id="clock-cyprus" class="location-clock">--:--:--</time>
+              </div>
+            </div>
+
+            <!-- Animated Golden Arc Bridge -->
+            <div class="constellation-bridge" aria-hidden="true">
+              <svg class="bridge-svg" viewBox="0 0 400 120" preserveAspectRatio="none">
+                <path class="bridge-arc-bg" d="M 20 95 Q 200 10 380 95" fill="none" stroke-width="1.5" />
+                <path class="bridge-arc-pulse" d="M 20 95 Q 200 10 380 95" fill="none" stroke-width="2.5" />
+                <circle class="bridge-star" cx="20" cy="95" r="4" />
+                <circle class="bridge-star" cx="200" cy="52" r="3" />
+                <circle class="bridge-star" cx="380" cy="95" r="4" />
+              </svg>
+              <p class="bridge-caption">Connected by loyalty, untouched by miles</p>
+            </div>
+
+            <!-- Bangladesh Node -->
+            <div id="node-bangladesh" class="location-node">
+              <span class="location-tag">Bengal Delta Sky</span>
+              <h3 class="location-name">Bangladesh</h3>
+              <p class="location-person">Mysha</p>
+              <div class="location-clock-wrap">
+                <span class="clock-label">Local Time</span>
+                <time id="clock-bangladesh" class="location-clock">--:--:--</time>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Live Elapsed Time Counter Since 14 November 2023 -->
+          <div id="elapsed-timer-box" class="elapsed-timer-box" role="timer" aria-label="Live time elapsed since 14 November 2023">
+            <p class="timer-heading">Time Since Our Friendship Began (14 November 2023)</p>
+
+            <div class="timer-grid">
+              <div class="timer-cell">
+                <span id="timer-years" class="timer-value">3</span>
+                <span class="timer-unit">Years</span>
+              </div>
+              <div class="timer-cell">
+                <span id="timer-days" class="timer-value">0</span>
+                <span class="timer-unit">Days</span>
+              </div>
+              <div class="timer-cell">
+                <span id="timer-hours" class="timer-value">00</span>
+                <span class="timer-unit">Hours</span>
+              </div>
+              <div class="timer-cell">
+                <span id="timer-minutes" class="timer-value">00</span>
+                <span class="timer-unit">Minutes</span>
+              </div>
+              <div class="timer-cell">
+                <span id="timer-seconds" class="timer-value">00</span>
+                <span class="timer-unit">Seconds</span>
+              </div>
+            </div>
+
+            <p class="timer-footnote">
+              Every second counted in real time—from our first hello to this exact heartbeat.
+            </p>
+          </div>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch6-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="7">
+              <span>Continue to Chapter VII: The Unwritten Truth</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 7: THE UNWRITTEN TRUTH (Bilingual Private Diary)
+           ================================================================= -->
+      <section id="chapter-7" class="chapter-section" data-chapter="7" aria-labelledby="ch7-title" aria-hidden="true">
+        <div class="chapter-container">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter VII &bull; Your Sanctuary</p>
+            <h2 id="ch7-title" class="chapter-title">The Unwritten Truth</h2>
+            <p class="chapter-subtitle">A page that belongs entirely to you, Mysha—in English, বাংলা, or both</p>
+          </header>
+
+          <!-- Vintage Diary Card -->
+          <div id="diary-card" class="diary-card paper-texture">
+
+            <div id="diary-lang-hint" class="diary-lang-hint">
+              <p class="lang-en">Write whatever is in your heart. You choose whether it reaches Saajim or vanishes privately into the night.</p>
+              <p class="lang-bn" lang="bn">তোমার মনের না বলা কথাগুলো এখানে লিখতে পারো—বাংলায় অথবা ইংরেজিতে।</p>
+            </div>
+
+            <form id="diary-form" class="diary-form" novalidate>
+              <div class="form-field">
+                <label for="diary-title-input" class="diary-label">
+                  A Title or Mood for This Moment <span class="label-optional">(Optional)</span>
+                </label>
+                <input
+                  id="diary-title-input"
+                  name="subject"
+                  class="diary-input"
+                  type="text"
+                  maxlength="120"
+                  placeholder="e.g., Three years later / কিছু না বলা কথা..."
+                  autocomplete="off"
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="diary-textarea" class="diary-label">
+                  Your Words (English / বাংলা)
+                </label>
+                <textarea
+                  id="diary-textarea"
+                  name="message"
+                  class="diary-textarea"
+                  rows="7"
+                  maxlength="5000"
+                  placeholder="Write freely here... তোমার মনের কথা লেখো..."
+                  required
+                ></textarea>
+                <div class="diary-meta-bar">
+                  <span id="diary-char-count" class="diary-char-count">0 / 5000 characters</span>
+                </div>
+              </div>
+
+              <!-- Two Action Paths: SEND (Formspree) or KEEP PRIVATE (Local Clear) -->
+              <div class="diary-actions-row">
+                <button id="diary-send-btn" class="btn-gold" type="button">
+                  <span>SEND to Saajim</span>
+                </button>
+                <button id="diary-private-btn" class="btn-outline-gold" type="button">
+                  <span>KEEP PRIVATE</span>
+                </button>
+              </div>
+
+              <p id="diary-feedback-msg" class="diary-feedback-msg" role="status" aria-live="polite"></p>
+            </form>
+
+          </div>
+
+          <footer class="chapter-footer-nav">
+            <button id="ch7-continue-btn" class="btn-gold chapter-next-btn" type="button" data-next-chapter="8">
+              <span>Continue to Chapter VIII: Forever Starts Here</span>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CHAPTER 8: FOREVER STARTS HERE (Finale, Secret Unlock, Restart)
+           ================================================================= -->
+      <section id="chapter-8" class="chapter-section" data-chapter="8" aria-labelledby="ch8-title" aria-hidden="true">
+        <div class="chapter-container chapter-center">
+
+          <header class="chapter-header">
+            <p class="chapter-eyebrow">Chapter VIII &bull; The Horizon</p>
+            <h2 id="ch8-title" class="chapter-title">Forever Starts Here</h2>
+            <p class="chapter-subtitle">14 November 2023 — 14 November 2026 — And every year still unwritten</p>
+          </header>
+
+          <!-- Main Closing Tribute Container -->
+          <article id="finale-monolith" class="finale-monolith">
+            <div class="monolith-crest" aria-hidden="true">S &amp; M &bull; III</div>
+            <h3 class="monolith-heading">Happy 3rd Best-Friendship Anniversary, Mysha</h3>
+            <p class="monolith-lead">
+              Three years ago we began writing a story without knowing how deeply its pages would shape our lives. Thank you for every conversation, every shared silence, every laugh across time zones, and for being the finest best friend anyone could ever ask for.
+            </p>
+            <p class="monolith-signature">With unwavering gratitude,<br><strong>Saajim</strong></p>
+
+            <!-- Exploration Progress Checklist for Unlocking Secret Letter -->
+            <div class="unlock-progress-panel">
+              <p class="unlock-panel-title">Your Journey Through Our Eight Chapters</p>
+
+              <ul id="progress-checklist" class="progress-checklist" aria-label="Chapters visited checklist">
+                <li class="checklist-pill is-visited" data-check-chapter="1">I. Invitation</li>
+                <li class="checklist-pill" data-check-chapter="2">II. Beginning</li>
+                <li class="checklist-pill" data-check-chapter="3">III. Timeline</li>
+                <li class="checklist-pill" data-check-chapter="4">IV. Universe</li>
+                <li class="checklist-pill" data-check-chapter="5">V. Letters</li>
+                <li class="checklist-pill" data-check-chapter="6">VI. Two Places</li>
+                <li class="checklist-pill" data-check-chapter="7">VII. Diary</li>
+                <li class="checklist-pill" data-check-chapter="8">VIII. Forever</li>
+              </ul>
+
+              <p id="secret-letter-lock-msg" class="secret-letter-lock-msg" role="status" aria-live="polite">
+                Visit all eight chapters to unlock the Secret Ninth Envelope hidden between the lines.
+              </p>
+
+              <button id="secret-letter-trigger-btn" class="btn-gold is-locked" type="button" disabled aria-disabled="true">
+                <span>Open the Secret Letter</span>
+              </button>
+            </div>
+
+            <div class="finale-restart-row">
+              <button id="restart-journey-btn" class="btn-outline-subtle" type="button">
+                <span>Restart the Anniversary Experience</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================================================================
+         MODAL 1: FULLSCREEN GALLERY LIGHTBOX (Chapter 4)
+         =================================================================== -->
+    <div id="lightbox-modal" class="modal-overlay lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" aria-hidden="true">
+      <div class="modal-backdrop" data-close-lightbox="true"></div>
+      <div class="lightbox-dialog">
+        <button id="lightbox-close-btn" class="modal-close-btn" type="button" aria-label="Close fullscreen view">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="lightbox-media-stage">
+          <img id="lightbox-img" class="lightbox-img" src="assets/1.jpg" alt="Fullscreen anniversary photograph">
+          <div id="lightbox-fallback" class="lightbox-fallback" hidden>
+            <p class="fallback-title">Memory Frame</p>
+            <p class="fallback-sub">Image file unavailable in /assets/</p>
+          </div>
+        </div>
+
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         MODAL 2: UNSENT LETTER READER MODAL (Chapter 5)
+         =================================================================== -->
+    <div id="letter-reader-modal" class="modal-overlay letter-reader-modal" role="dialog" aria-modal="true" aria-labelledby="letter-reader-title" aria-hidden="true">
+      <div class="modal-backdrop" data-close-letter="true"></div>
+      <article class="letter-modal-card paper-texture">
+        <header class="letter-modal-header">
+          <div>
+            <p id="letter-reader-date" class="letter-modal-date"></p>
+            <h3 id="letter-reader-title" class="letter-modal-title"></h3>
+          </div>
+          <button id="letter-reader-close" class="modal-close-btn" type="button" aria-label="Close letter">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+
+        <div id="letter-reader-body" class="letter-modal-body"></div>
+      </article>
+    </div>
+
+    <!-- ===================================================================
+         MODAL 3: DIARY CONFIRMATION DIALOG (Chapter 7 SEND / KEEP PRIVATE)
+         =================================================================== -->
+    <div id="confirm-modal" class="modal-overlay confirm-modal" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title" aria-describedby="confirm-modal-body" aria-hidden="true">
+      <div class="modal-backdrop" data-close-confirm="true"></div>
+      <div class="confirm-dialog-card">
+        <p class="confirm-eyebrow">Please Confirm Your Choice</p>
+        <h3 id="confirm-modal-title" class="confirm-title">Confirm Action</h3>
+        <p id="confirm-modal-body" class="confirm-body"></p>
+
+        <div class="confirm-actions">
+          <button id="confirm-proceed-btn" class="btn-gold" type="button">
+            <span>Confirm</span>
+          </button>
+          <button id="confirm-cancel-btn" class="btn-outline-subtle" type="button">
+            <span>Go Back</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         MODAL 4: SECRET LETTER MODAL (Unlocked After All 8 Chapters)
+         =================================================================== -->
+    <div id="secret-letter-modal" class="modal-overlay secret-letter-modal" role="dialog" aria-modal="true" aria-labelledby="secret-modal-heading" aria-hidden="true">
+      <div class="modal-backdrop" data-close-secret="true"></div>
+      <article class="secret-modal-card paper-texture">
+        <header class="secret-modal-header">
+          <div>
+            <p class="secret-eyebrow">Epilogue &bull; Unlocked 8 / 8</p>
+            <h3 id="secret-modal-heading" class="secret-title">The Page Between the Lines</h3>
+          </div>
+          <button id="secret-letter-close-btn" class="modal-close-btn" type="button" aria-label="Close secret letter">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+
+        <div id="secret-letter-body" class="secret-modal-body">
+          <p>Dearest Mysha,</p>
+          <p>
+            You walked through every room of this memory palace—from our first November in 2023 to the horizon of 2026. If you are reading this page, it means you lingered over the details the way you always have in life.
+          </p>
+          <p>
+            People often talk about soulmates as if they only belong to one kind of story. But the rarest grace on earth is a best friend who knows the weight of your silences, celebrates your quietest victories, and stands beside you across oceans without ever asking for anything in return.
+          </p>
+          <p>
+            Touch the golden seal below—there is one final sky waiting for you beyond this page.
+          </p>
+        </div>
+
+        <footer class="secret-modal-footer">
+          <button id="hidden-ending-unlock-btn" class="btn-gold secret-seal-btn" type="button">
+            <span>Touch the Golden Seal &bull; Unlock Hidden Ending</span>
+          </button>
+        </footer>
+      </article>
+    </div>
+
+    <!-- ===================================================================
+         OVERLAY 5: HIDDEN ENDING CINEMATIC OVERLAY (Final Epilogue)
+         =================================================================== -->
+    <aside id="hidden-ending-overlay" class="hidden-ending-overlay" role="dialog" aria-modal="true" aria-labelledby="hidden-ending-title" aria-hidden="true">
+      <div class="starfield-layer" aria-hidden="true"></div>
+      <div id="hidden-ending-content" class="hidden-ending-content">
+        <p class="hidden-ending-kicker">Hidden Ending Unlocked &bull; 14.11.2023 — &infin;</p>
+        <h2 id="hidden-ending-title" class="hidden-ending-title">Beyond the Horizon</h2>
+        <blockquote class="hidden-ending-quote">
+          “Distance only measures miles, never what one soul means to another.”
+        </blockquote>
+        <div class="hidden-ending-prose">
+          <p>
+            Wherever the years take us next—whether under the Mediterranean sun of Cyprus, the monsoon skies of Bangladesh, or any city on earth—this promise stays unchanged: you will never walk through a season of life without a best friend in your corner.
+          </p>
+          <p class="hidden-ending-benediction">
+            Happy Third Anniversary, Mysha.<br>
+            <strong>Here is to forever. — Saajim</strong>
+          </p>
+        </div>
+
+        <button id="hidden-ending-close-btn" class="btn-outline-gold" type="button">
+          <span>Return to Chapter VIII</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         GLOBAL TOAST NOTIFICATION
+         =================================================================== -->
+    <div id="toast-notification" class="toast-notification" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+    <!-- ===================================================================
+         PERSISTENT AUDIO ELEMENTS
+         =================================================================== -->
+    <audio id="bg-audio" src="assets/music.mp3" preload="metadata" loop></audio>
+    <audio id="voice-audio" src="assets/voice-message.mp3" preload="metadata"></audio>
+
+  </div>
+
+  <!-- Main Application Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
+
